@@ -54,6 +54,8 @@ Bundle 'Syntastic'
 Bundle 'a.vim'
 Bundle 'snipMate'
 
+" Theme
+Bundle 'Distinguished'
 
 " Brief help
 " :BundleList          - list configured bundles
@@ -71,6 +73,12 @@ Bundle 'snipMate'
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 filetype plugin indent on
+
+" colorscheme
+colorscheme distinguished
+
+" Do not wrap to the begining of the buffer when searching
+set nowrapscan
 
 " Code.
 set showmatch     " set show matching parenthesis
