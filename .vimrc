@@ -77,6 +77,13 @@ filetype plugin indent on
 " colorscheme
 colorscheme distinguished
 
+" Enable flex and Bison syntax highlighting
+" flex
+autocmd BufRead,BufNewFile *.fl,*.flex,*.l,*.lm setlocal ft=lex
+
+" bison
+autocmd BufRead,BufNewFile *.y,*.ypp,*.ym setlocal ft=yacc
+
 " Do not wrap to the begining of the buffer when searching
 set nowrapscan
 
